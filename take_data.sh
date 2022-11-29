@@ -7,9 +7,6 @@ D=$(($B - $A + 1))
 E=$(($D + $C))
 F=$(grep -n "Orbital energies and kinetic energies (alpha)" *.log | tr -cd '[0-9]')
 G=$(($F + 1200))
-#echo $A
-#echo $B
-#echo $C
-#echo $D
+
 awk "NR==$A,NR==$B {print} NR==$C,NR==$E {print} NR==$F,NR==$G {print}" *.log > data_frog.log2
 
