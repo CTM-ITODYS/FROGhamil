@@ -4,7 +4,7 @@ Bash script for taking the Overlap and Fock matrix from a logfile from Gaussian1
 take_data.sh
 
 First make it executable
-chmod +X take_data.sh
+chmod +x take_data.sh
 
 Second copy it in your bin directory.
 sudo cp take_data.sh /bin/take_data
